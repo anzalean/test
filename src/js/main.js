@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupNavigation();
     initReviewsSwiper();
     initAccordion();
+    initSidebar();
 });
 
 function setupFAQ() {
@@ -68,11 +69,12 @@ function setupFAQ() {
 }
 
 function setupLanguageSelector() {
-    const languageSelector = document.querySelector('.header__language .language-selector');
-    const languageDropdown = document.querySelector('.header__language .language-dropdown');
-    const mobileLanguageSelector = document.querySelector('.mobile-menu__language .language-selector');
+    const headerSelector = document.querySelector('.header__language .language-selector');
+    const headerDropdown = document.querySelector('.header__language .language-dropdown');
+    const mobileSelector = document.querySelector('.mobile-menu__language .language-selector');
+    const mobileDropdown = document.querySelector('.mobile-menu__language .language-dropdown');
 
-    if (!languageSelector || !languageDropdown) return;
+    if (!headerSelector || !headerDropdown) return;
 
     // Функція оновлення обох селекторів
     const updateBothSelectors = (button) => {
@@ -80,35 +82,72 @@ function setupLanguageSelector() {
         const languageCode = button.querySelector('.language-dropdown__text').textContent.match(/\(([^)]+)\)/)[1];
 
         // Оновлюємо обидва селектори
-        [languageSelector, mobileLanguageSelector].forEach(selector => {
+        [headerSelector, mobileSelector].forEach(selector => {
             if (selector) {
                 selector.querySelector('.language-selector__flag').innerHTML = flagSvg.innerHTML;
                 selector.querySelector('.language-selector__text').textContent = languageCode;
             }
         });
+
+        // Оновлюємо активний стан в обох дропдаунах
+        document.querySelectorAll('.language-dropdown__item').forEach(item => {
+            item.classList.remove('language-dropdown__item--active');
+        });
+
+        // Знаходимо і активуємо відповідні елементи в обох дропдаунах
+        const selectedText = button.querySelector('.language-dropdown__text').textContent;
+        document.querySelectorAll('.language-dropdown__button').forEach(btn => {
+            if (btn.querySelector('.language-dropdown__text').textContent === selectedText) {
+                btn.closest('.language-dropdown__item').classList.add('language-dropdown__item--active');
+            }
+        });
     };
 
-    // Обробник кліку на селектор
-    languageSelector.addEventListener('click', e => {
+    // Функція закриття дропдаунів
+    const closeDropdowns = () => {
+        headerSelector.classList.remove('language-selector--active');
+        headerDropdown.classList.remove('language-dropdown--visible');
+        if (mobileSelector && mobileDropdown) {
+            mobileSelector.classList.remove('language-selector--active');
+            mobileDropdown.classList.remove('language-dropdown--visible');
+        }
+    };
+
+    // Обробник кліку на селектор в хедері
+    headerSelector.addEventListener('click', e => {
         e.stopPropagation();
-        languageSelector.classList.toggle('language-selector--active');
-        languageDropdown.classList.toggle('language-dropdown--visible');
+        headerSelector.classList.toggle('language-selector--active');
+        headerDropdown.classList.toggle('language-dropdown--visible');
+        if (mobileDropdown) {
+            mobileDropdown.classList.remove('language-dropdown--visible');
+        }
     });
+
+    // Обробник кліку на мобільний селектор
+    if (mobileSelector && mobileDropdown) {
+        mobileSelector.addEventListener('click', e => {
+            e.stopPropagation();
+            mobileSelector.classList.toggle('language-selector--active');
+            mobileDropdown.classList.toggle('language-dropdown--visible');
+            headerDropdown.classList.remove('language-dropdown--visible');
+        });
+    }
 
     // Обробник кліку на кнопки в дропдауні
     document.querySelectorAll('.language-dropdown__button').forEach(button => {
         button.addEventListener('click', function() {
             updateBothSelectors(this);
-            languageSelector.classList.remove('language-selector--active');
-            languageDropdown.classList.remove('language-dropdown--visible');
+            closeDropdowns();
         });
     });
 
-    // Закриваємо дропдаун при кліку поза ним
+    // Закриваємо дропдауни при кліку поза ними
     document.addEventListener('click', e => {
-        if (!languageSelector.contains(e.target) && !languageDropdown.contains(e.target)) {
-            languageSelector.classList.remove('language-selector--active');
-            languageDropdown.classList.remove('language-dropdown--visible');
+        if (!headerSelector.contains(e.target) && 
+            !headerDropdown.contains(e.target) && 
+            (!mobileSelector || !mobileSelector.contains(e.target)) && 
+            (!mobileDropdown || !mobileDropdown.contains(e.target))) {
+            closeDropdowns();
         }
     });
 }
@@ -161,4 +200,55 @@ function initReviewsSwiper() {
 
 function initAccordion() {
     new Accordion('.accordion-container', { showMultiple: true, duration: 300 });
+}
+
+function initSidebar() {
+    const sidebarToggle = document.querySelector('.sidebar-toggle');
+    const sidebarMobile = document.querySelector('.sidebar-mobile');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay');
+    const sidebarClose = document.querySelector('.sidebar-mobile__close');
+    const body = document.body;
+
+    if (!sidebarToggle || !sidebarMobile || !sidebarOverlay || !sidebarClose) return;
+
+    const openSidebar = () => {
+        sidebarMobile.classList.add('is-open');
+        sidebarOverlay.classList.add('is-visible');
+        body.style.overflow = 'hidden';
+    };
+
+    const closeSidebar = () => {
+        sidebarMobile.classList.remove('is-open');
+        sidebarOverlay.classList.remove('is-visible');
+        body.style.overflow = '';
+    };
+
+    sidebarToggle.addEventListener('click', openSidebar);
+    sidebarClose.addEventListener('click', closeSidebar);
+    
+    // Закриваємо при кліку поза сайдбаром
+    document.addEventListener('click', (e) => {
+        if (sidebarMobile.classList.contains('is-open') && 
+            !sidebarMobile.contains(e.target) && 
+            !sidebarToggle.contains(e.target)) {
+            closeSidebar();
+        }
+    });
+
+    // Закриваємо при кліку на оверлей
+    sidebarOverlay.addEventListener('click', closeSidebar);
+
+    // Закриваємо при натисканні Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && sidebarMobile.classList.contains('is-open')) {
+            closeSidebar();
+        }
+    });
+
+    // Закриваємо сайдбар при ресайзі на десктоп
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1439) {
+            closeSidebar();
+        }
+    });
 }

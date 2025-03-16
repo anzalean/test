@@ -143,6 +143,34 @@
                                         <use href="assets/sprites/sprite.svg#icon-up"></use>
                                     </svg>
                                 </button>
+                                <div class="language-dropdown">
+                                    <ul class="language-dropdown__list">
+                                        <li class="language-dropdown__item language-dropdown__item--active">
+                                            <button class="language-dropdown__button">
+                                                <svg class="language-dropdown__flag" width="24" height="18">
+                                                    <use href="assets/sprites/sprite.svg#icon-austria"></use>
+                                                </svg>
+                                                <span class="language-dropdown__text">Austria (AT)</span>
+                                            </button>
+                                        </li>
+                                        <li class="language-dropdown__item">
+                                            <button class="language-dropdown__button">
+                                                <svg class="language-dropdown__flag" width="24" height="18">
+                                                    <use href="assets/sprites/sprite.svg#icon-china"></use>
+                                                </svg>
+                                                <span class="language-dropdown__text">China (CN)</span>
+                                            </button>
+                                        </li>
+                                        <li class="language-dropdown__item">
+                                            <button class="language-dropdown__button">
+                                                <svg class="language-dropdown__flag" width="24" height="18">
+                                                    <use href="assets/sprites/sprite.svg#icon-uk"></use>
+                                                </svg>
+                                                <span class="language-dropdown__text">UK (EN)</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="mobile-menu__buttons">
                                 <button class="mobile-menu__button button--orange">SIGN UP</button>
@@ -1269,5 +1297,367 @@
     <script src="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/main.js" defer></script>
+<button class="sidebar-toggle" aria-label="Відкрити сайдбар">
+    <svg width="24" height="24">
+        <use href="assets/sprites/sprite.svg#icon-sports"></use>
+    </svg>
+    <span>Sports</span>
+</button>
+<div class="sidebar-overlay"></div>
+<div class="sidebar-mobile">
+    <div class="sidebar-mobile__header">
+        <h3 class="sidebar-mobile__title">Sports</h3>
+        <button class="sidebar-mobile__close" aria-label="Закрити сайдбар">
+            <span class="sidebar-mobile__close-line"></span>
+            <span class="sidebar-mobile__close-line"></span>
+        </button>
+    </div>
+    <div class="sidebar-mobile__content">
+        <div class="sidebar__section">
+            <div class="live-events_wrapper">
+                <button class="live-events__button">
+                    <span class="live-events__icon">▲</span>
+                    LIVE EVENTS (143)
+                    <span class="live-events__icon--empty">▲</span>
+                </button>
+            </div>
+            <ul class="sports-list">
+                <li class="sports-list__item">
+                    <a href="#" class="sports-list__link">
+                        <picture class="sports-list__icon">
+                            <source 
+                                srcset="assets/images/sport/american_football-2x.png 2x, 
+                                        assets/images/sport/american_football-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/sport/american_football-1x.png" 
+                                alt="American football icon" 
+                                class="sports-list__icon-img"
+                                loading="lazy">
+                        </picture>
+                        American football
+                    </a>
+                </li>
+                <li class="sports-list__item">
+                    <a href="#" class="sports-list__link">
+                        <picture class="sports-list__icon">
+                            <source 
+                                srcset="assets/images/sport/busketball-2x.png 2x, 
+                                        assets/images/sport/busketball-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/sport/busketball-1x.png" 
+                                alt="Basketball icon" 
+                                class="sports-list__icon-img"
+                                loading="lazy">
+                        </picture>
+                        Basketball
+                    </a>
+                </li>
+                <li class="sports-list__item">
+                    <a href="#" class="sports-list__link">
+                        <picture class="sports-list__icon">
+                            <source 
+                                srcset="assets/images/sport/tennis-2x.png 2x, 
+                                        assets/images/sport/tennis-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/sport/tennis-1x.png" 
+                                alt="Tennis icon" 
+                                class="sports-list__icon-img"
+                                loading="lazy">
+                        </picture>
+                        Tennis
+                    </a>
+                </li>
+                <li class="sports-list__item">
+                    <a href="#" class="sports-list__link">
+                        <picture class="sports-list__icon">
+                            <source 
+                                srcset="assets/images/sport/basketball-2x.png 2x, 
+                                        assets/images/sport/basketball-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/sport/basketball-1x.png" 
+                                alt="Baseball icon" 
+                                class="sports-list__icon-img"
+                                loading="lazy">
+                        </picture>
+                        Basketball
+                    </a>
+                </li>
+                <li class="sports-list__item">
+                    <a href="#" class="sports-list__link">
+                        <picture class="sports-list__icon">
+                            <source 
+                                srcset="assets/images/sport/bowling-2x.png 2x, 
+                                        assets/images/sport/bowling-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/sport/bowling-1x.png" 
+                                alt="Bowling icon" 
+                                class="sports-list__icon-img"
+                                loading="lazy">
+                        </picture>
+                        Bowling
+                    </a>
+                </li>
+                <li class="sports-list__item">
+                    <a href="#" class="sports-list__link">
+                        <picture class="sports-list__icon">
+                            <source 
+                                srcset="assets/images/sport/box-2x.png 2x, 
+                                        assets/images/sport/box-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/sport/box-1x.png" 
+                                alt="Box icon" 
+                                class="sports-list__icon-img"
+                                loading="lazy">
+                        </picture>
+                        Box
+                    </a>
+                </li>
+                <li class="sports-list__item">
+                    <a href="#" class="sports-list__link">
+                        <picture class="sports-list__icon">
+                            <source 
+                                srcset="assets/images/sport/football-2x.png 2x, 
+                                        assets/images/sport/football-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/sport/football-1x.png" 
+                                alt="Football icon" 
+                                class="sports-list__icon-img"
+                                loading="lazy">
+                        </picture>
+                        Football
+                    </a>
+                </li>
+                <li class="sports-list__item">
+                    <a href="#" class="sports-list__link">
+                        <picture class="sports-list__icon">
+                            <source 
+                                srcset="assets/images/sport/golf-2x.png 2x, 
+                                        assets/images/sport/golf-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/sport/golf-1x.png" 
+                                alt="Golf icon" 
+                                class="sports-list__icon-img"
+                                loading="lazy">
+                        </picture>
+                        Golf
+                    </a>
+                </li>
+                <li class="sports-list__item">
+                    <a href="#" class="sports-list__link">
+                        <picture class="sports-list__icon">
+                            <source 
+                                srcset="assets/images/sport/golf_club-2x.png 2x, 
+                                        assets/images/sport/golf_club-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/sport/golf_club-1x.png" 
+                                alt="Golf Club icon" 
+                                class="sports-list__icon-img"
+                                loading="lazy">
+                        </picture>
+                        Golf Club
+                    </a>
+                </li>
+                <li class="sports-list__item">
+                    <a href="#" class="sports-list__link">
+                        <picture class="sports-list__icon">
+                            <source 
+                                srcset="assets/images/sport/skateboard-2x.png 2x, 
+                                        assets/images/sport/skateboard-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/sport/skateboard-1x.png" 
+                                alt="Skateboard icon" 
+                                class="sports-list__icon-img"
+                                loading="lazy">
+                        </picture>
+                        Skateboard
+                    </a>
+                </li>
+                <li class="sports-list__item">
+                    <a href="#" class="sports-list__link">
+                        <picture class="sports-list__icon">
+                            <source 
+                                srcset="assets/images/sport/table_tennis-2x.png 2x, 
+                                        assets/images/sport/table_tennis-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/sport/table_tennis-1x.png" 
+                                alt="Table tennis icon" 
+                                class="sports-list__icon-img"
+                                loading="lazy">
+                        </picture>
+                        Table tennis
+                    </a>
+                </li>
+                <li class="sports-list__item">
+                    <a href="#" class="sports-list__link">
+                        <picture class="sports-list__icon">
+                            <source 
+                                srcset="assets/images/sport/tennis_racket-2x.png 2x, 
+                                        assets/images/sport/tennis_racket-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/sport/tennis_racket-1x.png" 
+                                alt="Tennis racket icon" 
+                                class="sports-list__icon-img"
+                                loading="lazy">
+                        </picture>
+                        Tennis racket
+                    </a>
+                </li>
+                <li class="sports-list__item">
+                    <a href="#" class="sports-list__link">
+                        <picture class="sports-list__icon">
+                            <source 
+                                srcset="assets/images/sport/volleyball-2x.png 2x, 
+                                        assets/images/sport/volleyball-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/sport/volleyball-1x.png" 
+                                alt="Volleyball icon" 
+                                class="sports-list__icon-img"
+                                loading="lazy">
+                        </picture>
+                        Volleyball
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar__section">
+            <h2 class="sidebar__title">CASINO</h2>
+            <div class="casino-games">
+                <div class="casino-games__item">
+                    <picture class="casino-games__picture">
+                        <source 
+                            srcset="assets/images/casino/first-2x.png 2x, 
+                                    assets/images/casino/first-1x.png 1x"
+                            type="image/png">
+                        <img 
+                            src="assets/images/casino/first-1x.png" 
+                            alt="WELL OIL" 
+                            class="casino-games__image"
+                            loading="lazy">
+                    </picture>
+                    <div class="casino-games__overlay">
+                        <span class="casino-games__title">WELL OIL</span>
+                        <button class="casino-games_button--login">LOGIN</button>
+                        <span class="casino-games__or">or</span>
+                        <button class="casino-games_button--signup">SIGN UP</button>
+                    </div>
+                </div>
+                
+                <div class="casino-games__item">
+                    <picture class="casino-games__picture">
+                        <source 
+                            srcset="assets/images/casino/second-2x.png 2x, 
+                                    assets/images/casino/second-1x.png 1x"
+                            type="image/png">
+                        <img 
+                            src="assets/images/casino/second-1x.png" 
+                            alt="QUEEN OF ICE EXPANDED EDITION" 
+                            class="casino-games__image"
+                            loading="lazy">
+                    </picture>
+                    <div class="casino-games__overlay">
+                        <span class="casino-games__title">WELL OIL</span>
+                        <button class="casino-games_button--login">LOGIN</button>
+                        <span class="casino-games__or">or</span>
+                        <button class="casino-games_button--signup">SIGN UP</button>
+                    </div>
+                </div>
+                
+                <div class="casino-games__item">
+                    <picture class="casino-games__picture">
+                        <source 
+                            srcset="assets/images/casino/third-2x.png 2x, 
+                                    assets/images/casino/third-1x.png 1x"
+                            type="image/png">
+                        <img 
+                            src="assets/images/casino/third-1x.png" 
+                            alt="LUCKY JACK TUT'S TREASURES" 
+                            class="casino-games__image"
+                            loading="lazy">
+                    </picture>
+                    <div class="casino-games__overlay">
+                        <span class="casino-games__title">WELL OIL</span>
+                        <button class="casino-games_button--login">LOGIN</button>
+                        <span class="casino-games__or">or</span>
+                        <button class="casino-games_button--signup">SIGN UP</button>
+                    </div>
+                </div>
+                
+                <div class="casino-games__item">
+                    <picture class="casino-games__picture">
+                        <source 
+                            srcset="assets/images/casino/fourth-2x.png 2x, 
+                                    assets/images/casino/fourth-1x.png 1x"
+                            type="image/png">
+                        <img 
+                            src="assets/images/casino/fourth-1x.png" 
+                            alt="HOT CASH HOLD 'N' LINK" 
+                            class="casino-games__image"
+                            loading="lazy">
+                    </picture>
+                    <div class="casino-games__overlay">
+                        <span class="casino-games__title">WELL OIL</span>
+                        <button class="casino-games_button--login">LOGIN</button>
+                        <span class="casino-games__or">or</span>
+                        <button class="casino-games_button--signup">SIGN UP</button>
+                    </div>
+                </div>
+                
+                <div class="casino-games__item">
+                    <picture class="casino-games__picture">
+                        <source 
+                            srcset="assets/images/casino/fifth-2x.png 2x, 
+                                    assets/images/casino/fifth-1x.png 1x"
+                            type="image/png">
+                        <img 
+                            src="assets/images/casino/fifth-1x.png" 
+                            alt="LUCKY JACK LOST JUNGLE" 
+                            class="casino-games__image"
+                            loading="lazy">
+                    </picture>
+                    <div class="casino-games__overlay">
+                        <span class="casino-games__title">WELL OIL</span>
+                        <button class="casino-games_button--login">LOGIN</button>
+                        <span class="casino-games__or">or</span>
+                        <button class="casino-games_button--signup">SIGN UP</button>
+                    </div>
+                </div>
+                
+                <div class="casino-games__item">
+                    <picture class="casino-games__picture">
+                        <source 
+                            srcset="assets/images/casino/sixth-2x.png 2x, 
+                                    assets/images/casino/sixth-1x.png 1x"
+                            type="image/png">
+                        <img 
+                            src="assets/images/casino/sixth-1x.png" 
+                            alt="ROYAL COINS HOLD AND WIN" 
+                            class="casino-games__image"
+                            loading="lazy">
+                    </picture>
+                    <div class="casino-games__overlay">
+                        <span class="casino-games__title">WELL OIL</span>
+                        <button class="casino-games_button--login">LOGIN</button>
+                        <span class="casino-games__or">or</span>
+                        <button class="casino-games_button--signup">SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html> 

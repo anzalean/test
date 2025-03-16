@@ -1882,12 +1882,48 @@ h3 {
 }
 
 /* Update mobile menu styles */
+.mobile-menu__language {
+    margin-bottom: 20px;
+    position: relative;
+}
+
 .mobile-menu__language .language-selector {
     width: 100%;
     background: #1A3769;
 }
 
+/* Стилі для дропдауну в мобільному меню */
+.mobile-menu__language .language-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 8px;
+    background-color: #FCFCFC;
+    border-radius: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s;
+    z-index: 100;
+}
 
+.mobile-menu__language .language-dropdown.language-dropdown--visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.mobile-menu__language .language-dropdown__button {
+    color: #192A32;
+}
+
+.mobile-menu__language .language-dropdown__button:hover {
+    background-color: #C5D5E8;
+}
+.mobile-menu__language .language-dropdown__text {
+ color: #192A32;
+}
 .mobile-menu__nav {
     margin-bottom: 30px;
 }
@@ -1986,4 +2022,185 @@ h3 {
 
 .mobile-menu__sidebar {
     padding-top: 20px;
+}
+
+/* Стилі для кнопки відкриття сайдбару */
+.sidebar-toggle {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #EC622B;
+    border: none;
+    color: #FCFCFC;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    z-index: 98;
+    box-shadow: 0px 4px 18px rgba(14, 24, 17, 0.25);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar-toggle svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.sidebar-toggle span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sidebar-toggle:hover,
+.sidebar-toggle:focus {
+    background: #D55A27;
+    transform: translateY(-2px);
+}
+
+/* Стилі для мобільного сайдбару */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 98;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+.sidebar-overlay.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 375px;
+    height: 100vh;
+    background: #FCFCFC;
+    z-index: 99;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+}
+
+.sidebar-mobile.is-open {
+    right: 0;
+}
+
+.sidebar-mobile__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #192A32;
+    color: #FCFCFC;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.sidebar-mobile__title {
+    font-size: 24px;
+    margin: 0;
+    color: #FCFCFC;
+}
+
+.sidebar-mobile__close {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    transition: opacity 0.3s ease;
+    position: relative;
+}
+
+.sidebar-mobile__close:hover {
+    opacity: 0.7;
+}
+
+.sidebar-mobile__close-line {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #FCFCFC;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-mobile__close-line:first-child {
+    transform: rotate(45deg);
+}
+
+.sidebar-mobile__close-line:last-child {
+    transform: rotate(-45deg);
+}
+
+.sidebar-mobile__content {
+    padding: 20px;
+}
+
+/* Медіа-запити */
+@media screen and (max-width: 1439px) {
+    .layout__sidebar {
+        display: none;
+    }
+
+    .sidebar-toggle,
+    .sidebar-overlay,
+    .sidebar-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar__title {
+        width: 100%;
+    }
+
+    .sidebar-mobile__content {
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar-mobile {
+        max-width: 100%;
+    }
+
+    .casino-games {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .casino-games__item {
+        width: 100%;
+        max-width: 160px;
+        aspect-ratio: 1/1;
+    }
+
+    .casino-games__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
