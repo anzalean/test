@@ -153,8 +153,8 @@ function initReviewsSwiper() {
             prevEl: section.querySelector('.players-feedback__nav--prev'),
         },
         breakpoints: {
-            320: { slidesPerView: 1, spaceBetween: 10 },
-            768: { slidesPerView: 2, spaceBetween: 19 },
+            320: { slidesPerView: 1, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 30 },
         },
     });
 }
