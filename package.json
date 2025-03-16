@@ -1,0 +1,21 @@
+{
+  "name": "sports-betting-site",
+  "version": "1.0.0",
+  "description": "Sports betting website",
+  "main": "src/js/main.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "mkdir -p dist && cp -r src/* dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "accordion-js": "^3.4.0",
+    "normalize.css": "^8.0.1",
+    "swiper": "^11.2.5"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

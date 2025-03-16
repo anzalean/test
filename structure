@@ -1,0 +1,12 @@
+sports-betting-site/
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   ├── styles/
+│   │   ├── blocks/
+│   │   ├── base.css
+│   │   └── main.css
+│   ├── scripts/
+│   │   └── main.js
+│   └── index.html
+└── package.json 

@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Betting Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.css" />
+<script src="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    
+    
+    <div class="layout">
+                <header class="header">
+                    <div class="header__container">
+                        <a href="/" class="header__logo">LOGO</a>
+                        <nav class="header__nav">
+                            <ul class="header__menu">
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__link header__link--bonuses">
+                                        <svg class="header__icon" width="24" height="24">
+                                            <use href="assets/sprites/sprite.svg#icon-gift"></use>
+                                        </svg>
+                                        BONUSES
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__link header__link--app">
+                                        <svg class="header__icon" width="24" height="24">
+                                            <use href="assets/sprites/sprite.svg#icon-smartphone"></use>
+                                        </svg>
+                                        APP
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__link">LIVE</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__link">SPORTS</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__link">MORE</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__actions">
+                            <div class="header__language">
+                                <button class="language-selector ">
+                                    <svg class="language-selector__flag" width="24" height="18">
+                                        <use href="assets/sprites/sprite.svg#icon-austria"></use>
+                                    </svg>
+                                    <span class="language-selector__text">AT</span>
+                                    <svg class="language-selector__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="language-dropdown">
+                                <ul class="language-dropdown__list">
+                                    <li class="language-dropdown__item language-dropdown__item--active">
+                                        <button class="language-dropdown__button">
+                                            <svg class="language-dropdown__flag" width="24" height="18">
+                                                <use href="assets/sprites/sprite.svg#icon-austria"></use>
+                                            </svg>
+                                            <span class="language-dropdown__text">Austria (AT)</span>
+                                        </button>
+                                    </li>
+                                    <li class="language-dropdown__item">
+                                        <button class="language-dropdown__button">
+                                            <svg class="language-dropdown__flag" width="24" height="18">
+                                                <use href="assets/sprites/sprite.svg#icon-china"></use>
+                                            </svg>
+                                            <span class="language-dropdown__text">China (CN)</span>
+                                        </button>
+                                    </li>
+                                    <li class="language-dropdown__item">
+                                        <button class="language-dropdown__button">
+                                            <svg class="language-dropdown__flag" width="24" height="18">
+                                                <use href="assets/sprites/sprite.svg#icon-uk"></use>
+                                            </svg>
+                                            <span class="language-dropdown__text">UK (EN)</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__buttons">
+                                <button class="header__button button--orange">SIGN UP</button>
+                                <button class="header__button button--green">LOG IN</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+ <div class="layout__main">
+            <div class="layout__content">
+                <main class="main">
+                    <section class="hero">
+                        <div class="hero__container container">
+                            <div class="hero__content">
+                                <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum.</p>
+                                <div class="hero__apps">
+                                    <button class="hero__button">
+                                        <div class="hero__icons">
+                                            <svg class="hero__icon" width="24" height="24">
+                                                <use href="assets/sprites/sprite.svg#icon-apple"></use>
+                                            </svg>
+                                            <svg class="hero__icon" width="24" height="24">
+                                                <use href="assets/sprites/sprite.svg#icon-android"></use>
+                                            </svg>
+                                        </div>
+                                        MOBILE APP
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="promo">
+                        <div class="promo__container container">
+                            <div class="promo__rating-container">
+                            <div class="promo__rating">96/100</div>
+                                <div class="promo__stars">
+                                    <svg class="promo__star" >
+                                        <use href="assets/sprites/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="promo__star" >
+                                        <use href="assets/sprites/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="promo__star" >
+                                        <use href="assets/sprites/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="promo__star" >
+                                        <use href="assets/sprites/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="promo__star" >
+                                        <use href="assets/sprites/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+                            <p class="promo__rating--text">Overall Rating Among Players</p>
+                            </div>
+                            <h1 class="promo__title">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING</h1>
+                            <button class="promo__button">SIGN UP</button>
+                            <p class="promo__text">18+ T&C apply |  Play Responsibly</p>
+                        </div>
+                    </section>
+
+                    <section class="navigation">
+                        <div class="navigation__container container">
+                            <ul class="navigation__list">
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__link">
+                                        <svg class="navigation__icon" width="32" height="32">
+                                            <use href="assets/sprites/sprite.svg#icon-review"></use>
+                                        </svg>
+                                        <span class="navigation__text">PLAY REVIEW</span>
+                                    </a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__link navigation__link--active">
+                                        <svg class="navigation__icon" width="32" height="32">
+                                            <use href="assets/sprites/sprite.svg#icon-bonus"></use>
+                                        </svg>
+                                        <span class="navigation__text">CASINO BONUSES</span>
+                                    </a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__link">
+                                        <svg class="navigation__icon" width="32" height="32">
+                                            <use href="assets/sprites/sprite.svg#icon-bonuses"></use>
+                                        </svg>
+                                        <span class="navigation__text">CASINO BONUSES</span>
+                                    </a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__link">
+                                        <svg class="navigation__icon" width="32" height="32">
+                                            <use href="assets/sprites/sprite.svg#icon-apps"></use>
+                                        </svg>
+                                        <span class="navigation__text">CASINO APP</span>
+                                    </a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__link">
+                                        <svg class="navigation__icon" width="32" height="32">
+                                            <use href="assets/sprites/sprite.svg#icon-mobile"></use>
+                                        </svg>
+                                        <span class="navigation__text">CASINO MOBILE</span>
+                                    </a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__link">
+                                        <svg class="navigation__icon" width="32" height="32">
+                                            <use href="assets/sprites/sprite.svg#icon-sign"></use>
+                                        </svg>
+                                        <span class="navigation__text">HOW TO SIGN UP</span>
+                                    </a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__link">
+                                        <svg class="navigation__icon" width="32" height="32">
+                                            <use href="assets/sprites/sprite.svg#icon-review"></use>
+                                        </svg>
+                                        <span class="navigation__text">CASINO REVIEW</span>
+                                    </a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__link">
+                                        <svg class="navigation__icon navigation__icon--reviews4" width="32" height="32">
+                                            <use href="assets/sprites/sprite.svg#icon-reviews4"></use>
+                                        </svg>
+                                        <span class="navigation__text">PLAYER REVIEWS (4)</span>
+                                    </a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__link">
+                                        <svg class="navigation__icon navigation__icon--complaints" width="32" height="32">
+                                            <use href="assets/sprites/sprite.svg#icon-complaints"></use>
+                                        </svg>
+                                        <span class="navigation__text">COMPLAINTS</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="bonus">
+                        <div class="bonus__container container">
+                            <h3 class="bonus__title">100% BONUS UP TO 300€</h3>
+                                <p class="bonus__text">+100 free spins on your first deposit</p>
+                                <button class="bonus__button">GET A BONUS NOW</button>
+                        </div>
+                    </section>
+
+                    <section class="bonus-info">
+                        <div class="bonus-info__container container">
+                            <h2 class="bonus-info__title">100% UP TO 300€</h2>
+                            <p class="bonus-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque risit</p>
+                        </div>
+                    </section>
+
+                    <section class="ratings">
+                        <div class="ratings__container container">
+                            <div class="ratings__item">
+                                <div class="ratings__label">BONUS OFFER</div>
+                                <div class="ratings__info">
+                                    <div class="ratings__stars">
+                                        
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="ratings__score">9/10</div>
+                                </div>
+                            </div>
+                            
+                            <div class="ratings__item">
+                                <div class="ratings__label">BETTING VARIETY</div>
+                                <div class="ratings__info">
+                                    <div class="ratings__stars">
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="ratings__score">8/10</div>
+                                </div>
+                            </div>
+                            
+                            <div class="ratings__item">
+                                <div class="ratings__label">MOBILE EXPERIENCE</div>
+                                <div class="ratings__info">
+                                    <div class="ratings__stars">
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="ratings__score">7/10</div>
+                                </div>
+                            </div>
+                            
+                            <div class="ratings__item">
+                                <div class="ratings__label">PAYMENT OPTIONS</div>
+                               <div class="ratings__info">
+                                    <div class="ratings__stars">
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-filled"></use>
+                                        </svg>
+                                        <svg class="ratings__star" width="32" height="31">
+                                            <use href="assets/sprites/sprite.svg#icon-star-empty"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="ratings__score">9/10</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="facts">
+                        <div class="facts__container container">
+                            <h3 class="facts__title">QUICK FACTS</h3>
+                            <ul class="facts__list">
+                                <li class="fact-item">
+                                    <picture class="fact-item__icon">
+                                        <source 
+                                            srcset="assets/images/facts/website-2x.png 2x, 
+                                                    assets/images/facts/website-1x.png 1x"
+                                            type="image/png">
+                                        <img 
+                                            src="assets/images/facts/website-1x.png" 
+                                            alt="Website icon" 
+                                            class="fact-item__icon-img"
+                                            loading="lazy">
+                                    </picture>
+                                    <div class="fact-item__label">Website:</div>
+                                    <div class="fact-item__value">casinoname.com</div>
+                                </li>
+
+                                <li class="fact-item">
+                                    <picture class="fact-item__icon">
+                                        <source 
+                                            srcset="assets/images/facts/game-2x.png 2x, 
+                                                    assets/images/facts/game-1x.png 1x"
+                                            type="image/png">
+                                        <img 
+                                            src="assets/images/facts/game-1x.png" 
+                                            alt="Game types icon" 
+                                            class="fact-item__icon-img"
+                                            loading="lazy">
+                                    </picture>
+                                    <div class="fact-item__label">Game Types:</div>
+                                    <div class="fact-item__value">Sportsbook, Casino, Live Games, Live Casino</div>
+                                </li>
+
+                                <li class="fact-item">
+                                    <picture class="fact-item__icon">
+                                        <source 
+                                            srcset="assets/images/facts/deposit-2x.png 2x, 
+                                                    assets/images/facts/deposit-1x.png 1x"
+                                            type="image/png">
+                                        <img 
+                                            src="assets/images/facts/deposit-1x.png" 
+                                            alt="Deposit methods icon" 
+                                            class="fact-item__icon-img"
+                                            loading="lazy">
+                                    </picture>
+                                    <div class="fact-item__label">Deposit Methods:</div>
+                                    <div class="fact-item__value">Visa, Mastercard, Maestro, PayPal, Skrill, Neteller, Trustly, Bitcoin, Bank Transfer, Entropay, ecoPayz, Neosurf</div>
+                                </li>
+
+                                <li class="fact-item">
+                                    <picture class="fact-item__icon">
+                                        <source 
+                                            srcset="assets/images/facts/card-2x.png 2x, 
+                                                    assets/images/facts/cardl-1x.png 1x"
+                                            type="image/png">
+                                        <img 
+                                            src="assets/images/facts/card-1x.png" 
+                                            alt="Withdrawal methods icon" 
+                                            class="fact-item__icon-img"
+                                            loading="lazy">
+                                    </picture>
+                                    <div class="fact-item__label">Withdrawal Methods:</div>
+                                    <div class="fact-item__value">Visa, Mastercard, Maestro, PayPal, Skrill, Neteller, Trustly, Bitcoin, Bank Transfer, Entropay, ecoPayz, Neosurf</div>
+                                </li>
+
+                                <li class="fact-item">
+                                    <picture class="fact-item__icon">
+                                        <source 
+                                            srcset="assets/images/facts/betting-2x.png 2x, 
+                                                    assets/images/facts/betting-1x.png 1x"
+                                            type="image/png">
+                                        <img 
+                                            src="assets/images/facts/betting-1x.png" 
+                                            alt="Betting functions icon" 
+                                            class="fact-item__icon-img"
+                                            loading="lazy">
+                                    </picture>
+                                    <div class="fact-item__label">Betting Functions:</div>
+                                    <div class="fact-item__value">Live betting, cash out</div>
+                                </li>
+
+                                <li class="fact-item">
+                                    <picture class="fact-item__icon">
+                                        <source 
+                                            srcset="assets/images/facts/casino-2x.png 2x, 
+                                                    assets/images/facts/casino-1x.png 1x"
+                                            type="image/png">
+                                        <img 
+                                            src="assets/images/facts/casino-1x.png" 
+                                            alt="Casino game types icon" 
+                                            class="fact-item__icon-img"
+                                            loading="lazy">
+                                    </picture>
+                                    <div class="fact-item__label">Casino Game Types:</div>
+                                    <div class="fact-item__value">Slots, table games</div>
+                                </li>
+
+                                <li class="fact-item">
+                                    <picture class="fact-item__icon">
+                                        <source 
+                                            srcset="assets/images/facts/provider-2x.png 2x, 
+                                                    assets/images/facts/provider-1x.png 1x"
+                                            type="image/png">
+                                        <img 
+                                            src="assets/images/facts/provider-1x.png" 
+                                            alt="Casino provider icon" 
+                                            class="fact-item__icon-img"
+                                            loading="lazy">
+                                    </picture>
+                                    <div class="fact-item__label">Casino Provider:</div>
+                                    <div class="fact-item__value">1X2 Network, Amatic Industries, Apollo Games, Asia Gaming and more</div>
+                                </li>
+
+                                <li class="fact-item">
+                                    <picture class="fact-item__icon">
+                                        <source 
+                                            srcset="assets/images/facts/apps-2x.png 2x, 
+                                                    assets/images/facts/apps-1x.png 1x"
+                                            type="image/png">
+                                        <img 
+                                            src="assets/images/facts/apps-1x.png" 
+                                            alt="Apps icon" 
+                                            class="fact-item__icon-img"
+                                            loading="lazy">
+                                    </picture>
+                                    <div class="fact-item__label">Apps:</div>
+                                    <div class="fact-item__value">iPhone, Android</div>
+                                </li>
+
+                                <li class="fact-item">
+                                    <picture class="fact-item__icon">
+                                        <source 
+                                            srcset="assets/images/facts/founded-2x.png 2x, 
+                                                    assets/images/facts/founded-1x.png 1x"
+                                            type="image/png">
+                                        <img 
+                                            src="assets/images/facts/founded-1x.png" 
+                                            alt="Founded year icon" 
+                                            class="fact-item__icon-img"
+                                            loading="lazy">
+                                    </picture>
+                                    <div class="fact-item__label">Founded Year:</div>
+                                    <div class="fact-item__value">2017</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="sportsbook-review">
+                        <div class="sportsbook-review__container container">
+                            <div class="sportsbook-review__section">
+                            <h2 class="sportsbook-review__title">SPORTSBOOK REVIEW</h2>
+                            <p class="sportsbook-review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque risit</p>
+                            <p class="sportsbook-review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque risit</p>
+                        </div>
+                            <div class="sportsbook-review__section">
+                                <h3 class="sportsbook-review__subtitle">LINEUP OF THE SPORTS</h3>
+                                <p class="sportsbook-review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque risit</p>
+                            </div>
+
+                            <div class="sportsbook-review__section">
+                                <h3 class="sportsbook-review__subtitle">BETTING TYPES</h3>
+                                <p class="sportsbook-review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque risit</p>
+                            </div>
+
+                            <div class="sportsbook-review__section">
+                                <h3 class="sportsbook-review__subtitle">LIVE BETTING</h3>
+                                <ul class="sportsbook-review__list">
+                                    <li class="sportsbook-review__item"><span class="sportsbook-review__decoration">-</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget.</li>
+                                    <li class="sportsbook-review__item"><span class="sportsbook-review__decoration">-</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                    <li class="sportsbook-review__item"><span class="sportsbook-review__decoration">-</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus.</li>
+                                </ul>
+                                <ul class="sportsbook-review__list">
+                                    <li class="sportsbook-review__item"><span class="sportsbook-review__decoration sportsbook-review__numbered-decoration">1</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget.</li>
+                                    <li class="sportsbook-review__item"><span class="sportsbook-review__decoration sportsbook-review__numbered-decoration">2</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                    <li class="sportsbook-review__item"><span class="sportsbook-review__decoration sportsbook-review__numbered-decoration">3</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus.</li>
+                                </ul>
+                                <p class="sportsbook-review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque risit</p>
+                                <button class="sportsbook-review__button">SIGN UP</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="players-feedback">
+                        <div class="players-feedback__container container swiper">
+                            <h3 class="players-feedback__title">WHAT OTHER PLAYERS HAVE TO SAY</h3>
+                            <div class="players-feedback__slider ">
+                                <div class="players-feedback__nav players-feedback__nav--prev swiper-button-prev" aria-label="Previous slide">←</div>
+                                <div class="players-feedback__nav players-feedback__nav--next swiper-button-next" aria-label="Next slide"> →</div>
+                                <div class="players-feedback__wrapper swiper-wrapper">
+                                    <div class="players-feedback__slide swiper-slide">
+                                        <div class="feedback-card">
+                                            <div class="feedback-card__user">
+                                                <picture class="feedback-card__avatar">
+                                                    <source 
+                                                        srcset="assets/images/avatars/joshua-2x.png 2x, 
+                                                                assets/images/avatars/joshua-1x.png 1x"
+                                                        type="image/png">
+                                                    <img 
+                                                        src="assets/images/avatars/joshua-1x.png" 
+                                                        alt="Joshua's avatar" 
+                                                        class="feedback-card__avatar-img"
+                                                        loading="lazy">
+                                                </picture>
+                                               
+                                            </div>
+                                            <div class="feedback-card__content">
+                                             <div class="feedback-card__info">
+                                                    <div class="feedback-card__name">JOSHUA</div>
+                                                    <div class="feedback-card__rating">
+                                                        <svg class="feedback-card__star" width="16" height="16">
+                                            <use href="assets/sprites/sprite.svg#icon-review-star"></use>
+                                        </svg>
+                                                        4.5
+                                                    </div>
+                                                </div>
+                                                <p class="feedback-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget.</p>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="players-feedback__slide swiper-slide">
+                                        <div class="feedback-card">
+                                            <div class="feedback-card__user">
+                                                <picture class="feedback-card__avatar">
+                                                    <source 
+                                                        srcset="assets/images/avatars/mark-2x.png 2x, 
+                                                                assets/images/avatars/mark-1x.png 1x"
+                                                        type="image/png">
+                                                    <img 
+                                                        src="assets/images/avatars/mark-1x.png" 
+                                                        alt="Mark's avatar" 
+                                                        class="feedback-card__avatar-img"
+                                                        loading="lazy">
+                                                </picture>
+                                               
+                                            </div>
+                                            <div class="feedback-card__content">
+                                             <div class="feedback-card__info">
+                                                    <div class="feedback-card__name">MARK</div>
+                                                    <div class="feedback-card__rating">
+                                                        <svg class="feedback-card__star" width="16" height="16">
+                                            <use href="assets/sprites/sprite.svg#icon-review-star"></use>
+                                        </svg>
+                                                        4.5
+                                                    </div>
+                                                </div>
+                                                <p class="feedback-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget.</p>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="players-feedback__slide swiper-slide">
+                                        <div class="feedback-card">
+                                            <div class="feedback-card__user">
+                                                <picture class="feedback-card__avatar">
+                                                    <source 
+                                                        srcset="assets/images/avatars/joshua-2x.png 2x, 
+                                                                assets/images/avatars/joshua-1x.png 1x"
+                                                        type="image/png">
+                                                    <img 
+                                                        src="assets/images/avatars/joshua-1x.png" 
+                                                        alt="Joshua's avatar" 
+                                                        class="feedback-card__avatar-img"
+                                                        loading="lazy">
+                                                </picture>
+                                               
+                                            </div>
+                                            <div class="feedback-card__content">
+                                             <div class="feedback-card__info">
+                                                    <div class="feedback-card__name">JOSHUA</div>
+                                                    <div class="feedback-card__rating">
+                                                        <svg class="feedback-card__star" width="16" height="16">
+                                            <use href="assets/sprites/sprite.svg#icon-review-star"></use>
+                                        </svg>
+                                                        4.5
+                                                    </div>
+                                                </div>
+                                                <p class="feedback-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget.</p>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="players-feedback__slide swiper-slide">
+                                        <div class="feedback-card">
+                                            <div class="feedback-card__user">
+                                                <picture class="feedback-card__avatar">
+                                                    <source 
+                                                        srcset="assets/images/avatars/mark-2x.png 2x, 
+                                                                assets/images/avatars/mark-1x.png 1x"
+                                                        type="image/png">
+                                                    <img 
+                                                        src="assets/images/avatars/mark-1x.png" 
+                                                        alt="Mark's avatar" 
+                                                        class="feedback-card__avatar-img"
+                                                        loading="lazy">
+                                                </picture>
+                                               
+                                            </div>
+                                            <div class="feedback-card__content">
+                                             <div class="feedback-card__info">
+                                                    <div class="feedback-card__name">MARK</div>
+                                                    <div class="feedback-card__rating">
+                                                         <svg class="feedback-card__star" width="16" height="16">
+                                            <use href="assets/sprites/sprite.svg#icon-review-star"></use>
+                                        </svg>
+                                                        4.5
+                                                    </div>
+                                                </div>
+                                                <p class="feedback-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget.</p>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- Додайте інші слайди за потреби -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="support">
+                        <div class="support__container container">
+                            <h2 class="support__title">CUSTOMER SUPPORT</h2>
+                            <p class="support__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi
+                            </p>
+                            
+                            <div class="support__buttons">
+                                <a href="#" class="support__button">
+                                    <svg class="support__icon" width="24" height="24">
+                                        <use href="assets/sprites/sprite.svg#icon-chat"></use>
+                                    </svg>
+                                    CHAT
+                                </a>
+                                <a href="#" class="support__button">
+                                    <svg class="support__icon" width="24" height="24">
+                                        <use href="assets/sprites/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    PHONE
+                                </a>
+                                <a href="#" class="support__button">
+                                    <svg class="support__icon" width="24" height="24">
+                                        <use href="assets/sprites/sprite.svg#icon-email"></use>
+                                    </svg>
+                                    EMAIL
+                                </a>
+                            </div>
+                            
+                            <ul class="support__contacts">
+                                <li class="support__contact-item">
+                                    <svg class="support__contact-icon" width="24" height="24">
+                                        <use href="assets/sprites/sprite.svg#icon-email"></use>
+                                    </svg>
+                                    <span class="support__contact-label">Email Technical Support</span>
+                                    <a href="mailto:example@mail.com" class="support__contact-value support__contact-value--email">example@mail.com</a>
+                                </li>
+                                <li class="support__contact-item">
+                                    <svg class="support__contact-icon" width="24" height="24">
+                                        <use href="assets/sprites/sprite.svg#icon-email"></use>
+                                    </svg>
+                                    <span class="support__contact-label">Online Partnership Queries</span>
+                                    <a href="mailto:examplesupport@mail.com" class="support__contact-value support__contact-value--email">examplesupport@mail.com</a>
+                                </li>
+                                <li class="support__contact-item">
+                                    <svg class="support__contact-icon" width="24" height="24">
+                                        <use href="assets/sprites/sprite.svg#icon-chat"></use>
+                                    </svg>
+                                    <span class="support__contact-label">Live chat</span>
+                                    <span class="support__contact-value">Available</span>
+                                </li>
+                                <li class="support__contact-item">
+                                    <svg class="support__contact-icon" width="24" height="24">
+                                        <use href="assets/sprites/sprite.svg#icon-address"></use>
+                                    </svg>
+                                    <span class="support__contact-label">Address</span>
+                                    <address class="support__contact-value">Broadway, 12, Lyric building, block 1, 1st floor, Flat/Office 15, 29000, Oslo, Norway</address>
+                                </li>
+                                <li class="support__contact-item">
+                                    <svg class="support__contact-icon" width="24" height="24">
+                                        <use href="assets/sprites/sprite.svg#icon-maps"></use>
+                                    </svg>
+                                    <span class="support__contact-label">Google Maps</span>
+                                    <a href="#" class="support__contact-value support__contact-value--link">Click here</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="faq">
+                        <div class="faq__container container">
+                            <h2 class="faq__title">FAQ</h2>
+                            <div class="faq__list accordion-container">
+                                <div class="faq__item ac">
+                                    <button class="faq__question ac-header ac-trigger" aria-expanded="true">
+                                        QUESTION
+                                        <svg class="faq__icon" width="24" height="24">
+                                        <use href="assets/sprites/sprite.svg#icon-up"></use>
+                                    </svg>
+                                    </button>
+                                    <div class="faq__answer ac-panel">
+                                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                                    </div>
+                                </div>
+
+                                <div class="faq__item ac">
+                                    <button class="faq__question ac-header ac-trigger">
+                                        QUESTION
+                                        <svg class="faq__icon" width="24" height="24">
+                                        <use href="assets/sprites/sprite.svg#icon-up"></use>
+                                    </svg>
+                                    </button>
+                                    <div class="faq__answer ac-panel">
+                                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                                    </div>
+                                </div>
+
+                                <div class="faq__item ac">
+                                    <button class="faq__question ac-header ac-trigger">
+                                        QUESTION
+                                        <svg class="faq__icon" width="24" height="24">
+                                        <use href="assets/sprites/sprite.svg#icon-up"></use>
+                                    </svg>
+                                    </button>
+                                    <div class="faq__answer ac-panel">
+                                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+
+                <footer class="footer">
+                    <div class="footer__container container">
+                        <div class="footer__content">
+                            <p class="footer__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi
+                            </p>
+                             
+                            <span class="footer__age">18+</span>
+                             
+                            
+                        </div>
+                        <p class="footer__warning">Gambling can be addictive. Play responsibly.</p>
+                        <div class="footer__logos">
+                            <a href="/" class="footer__logo footer__logo--left">LOGO</a>
+                            <a href="/" class="footer__logo footer__logo--right">LOGO</a>
+                        </div>
+                       
+                    </div>
+                </footer>
+            </div>
+        
+
+        <aside class="layout__sidebar sidebar">
+            <div class="sidebar__section">
+                <div class="live-events_wrapper">
+                <button class="live-events__button">
+                    <span class="live-events__icon">▲</span>
+                    LIVE EVENTS (143)
+                    <span class="live-events__icon--empty">▲</span>
+                </button>
+                </div>
+                <ul class="sports-list">
+                    <li class="sports-list__item">
+                        <a href="#" class="sports-list__link">
+                            <picture class="sports-list__icon">
+                                <source 
+                                    srcset="assets/images/sport/american_football-2x.png 2x, 
+                                            assets/images/sport/american_football-1x.png 1x"
+                                    type="image/png">
+                                <img 
+                                    src="assets/images/sport/american_football-1x.png" 
+                                    alt="American football icon" 
+                                    class="sports-list__icon-img"
+                                    loading="lazy">
+                            </picture>
+                            American football
+                        </a>
+                    </li>
+                    <li class="sports-list__item">
+                        <a href="#" class="sports-list__link">
+                            <picture class="sports-list__icon">
+                                <source 
+                                    srcset="assets/images/sport/busketball-2x.png 2x, 
+                                            assets/images/sport/busketball-1x.png 1x"
+                                    type="image/png">
+                                <img 
+                                    src="assets/images/sport/busketball-1x.png" 
+                                    alt="Basketball icon" 
+                                    class="sports-list__icon-img"
+                                    loading="lazy">
+                            </picture>
+                            Basketball
+                        </a>
+                    </li>
+                    <li class="sports-list__item">
+                        <a href="#" class="sports-list__link">
+                            <picture class="sports-list__icon">
+                                <source 
+                                    srcset="assets/images/sport/tennis-2x.png 2x, 
+                                            assets/images/sport/tennis-1x.png 1x"
+                                    type="image/png">
+                                <img 
+                                    src="assets/images/sport/tennis-1x.png" 
+                                    alt="Tennis icon" 
+                                    class="sports-list__icon-img"
+                                    loading="lazy">
+                            </picture>
+                            Tennis
+                        </a>
+                    </li>
+                    <li class="sports-list__item">
+                        <a href="#" class="sports-list__link">
+                            <picture class="sports-list__icon">
+                                <source 
+                                    srcset="assets/images/sport/basketball-2x.png 2x, 
+                                            assets/images/sport/basketball-1x.png 1x"
+                                    type="image/png">
+                                <img 
+                                    src="assets/images/sport/basketball-1x.png" 
+                                    alt="Baseball icon" 
+                                    class="sports-list__icon-img"
+                                    loading="lazy">
+                            </picture>
+                            Basketball
+                        </a>
+                    </li>
+                    <li class="sports-list__item">
+                        <a href="#" class="sports-list__link">
+                            <picture class="sports-list__icon">
+                                <source 
+                                    srcset="assets/images/sport/bowling-2x.png 2x, 
+                                            assets/images/sport/bowling-1x.png 1x"
+                                    type="image/png">
+                                <img 
+                                    src="assets/images/sport/bowling-1x.png" 
+                                    alt="Bowling icon" 
+                                    class="sports-list__icon-img"
+                                    loading="lazy">
+                            </picture>
+                            Bowling
+                        </a>
+                    </li>
+                    <li class="sports-list__item">
+                        <a href="#" class="sports-list__link">
+                            <picture class="sports-list__icon">
+                                <source 
+                                    srcset="assets/images/sport/box-2x.png 2x, 
+                                            assets/images/sport/box-1x.png 1x"
+                                    type="image/png">
+                                <img 
+                                    src="assets/images/sport/box-1x.png" 
+                                    alt="Box icon" 
+                                    class="sports-list__icon-img"
+                                    loading="lazy">
+                            </picture>
+                            Box
+                        </a>
+                    </li>
+                    <li class="sports-list__item">
+                        <a href="#" class="sports-list__link">
+                            <picture class="sports-list__icon">
+                                <source 
+                                    srcset="assets/images/sport/football-2x.png 2x, 
+                                            assets/images/sport/football-1x.png 1x"
+                                    type="image/png">
+                                <img 
+                                    src="assets/images/sport/football-1x.png" 
+                                    alt="Football icon" 
+                                    class="sports-list__icon-img"
+                                    loading="lazy">
+                            </picture>
+                            Football
+                        </a>
+                    </li>
+                    <li class="sports-list__item">
+                        <a href="#" class="sports-list__link">
+                            <picture class="sports-list__icon">
+                                <source 
+                                    srcset="assets/images/sport/golf-2x.png 2x, 
+                                            assets/images/sport/golf-1x.png 1x"
+                                    type="image/png">
+                                <img 
+                                    src="assets/images/sport/golf-1x.png" 
+                                    alt="Golf icon" 
+                                    class="sports-list__icon-img"
+                                    loading="lazy">
+                            </picture>
+                            Golf
+                        </a>
+                    </li>
+                    <li class="sports-list__item">
+                        <a href="#" class="sports-list__link">
+                            <picture class="sports-list__icon">
+                                <source 
+                                    srcset="assets/images/sport/golf_club-2x.png 2x, 
+                                            assets/images/sport/golf_club-1x.png 1x"
+                                    type="image/png">
+                                <img 
+                                    src="assets/images/sport/golf_club-1x.png" 
+                                    alt="Golf Club icon" 
+                                    class="sports-list__icon-img"
+                                    loading="lazy">
+                            </picture>
+                            Golf Club
+                        </a>
+                    </li>
+                    <li class="sports-list__item">
+                        <a href="#" class="sports-list__link">
+                            <picture class="sports-list__icon">
+                                <source 
+                                    srcset="assets/images/sport/skateboard-2x.png 2x, 
+                                            assets/images/sport/skateboard-1x.png 1x"
+                                    type="image/png">
+                                <img 
+                                    src="assets/images/sport/skateboard-1x.png" 
+                                    alt="Skateboard icon" 
+                                    class="sports-list__icon-img"
+                                    loading="lazy">
+                            </picture>
+                            Skateboard
+                        </a>
+                    </li>
+                    <li class="sports-list__item">
+                        <a href="#" class="sports-list__link">
+                            <picture class="sports-list__icon">
+                                <source 
+                                    srcset="assets/images/sport/table_tennis-2x.png 2x, 
+                                            assets/images/sport/table_tennis-1x.png 1x"
+                                    type="image/png">
+                                <img 
+                                    src="assets/images/sport/table_tennis-1x.png" 
+                                    alt="Table tennis icon" 
+                                    class="sports-list__icon-img"
+                                    loading="lazy">
+                            </picture>
+                            Table tennis
+                        </a>
+                    </li>
+                    <li class="sports-list__item">
+                        <a href="#" class="sports-list__link">
+                            <picture class="sports-list__icon">
+                                <source 
+                                    srcset="assets/images/sport/tennis_racket-2x.png 2x, 
+                                            assets/images/sport/tennis_racket-1x.png 1x"
+                                    type="image/png">
+                                <img 
+                                    src="assets/images/sport/tennis_racket-1x.png" 
+                                    alt="Tennis racket icon" 
+                                    class="sports-list__icon-img"
+                                    loading="lazy">
+                            </picture>
+                            Tennis racket
+                        </a>
+                    </li>
+                    <li class="sports-list__item">
+                        <a href="#" class="sports-list__link">
+                            <picture class="sports-list__icon">
+                                <source 
+                                    srcset="assets/images/sport/volleyball-2x.png 2x, 
+                                            assets/images/sport/volleyball-1x.png 1x"
+                                    type="image/png">
+                                <img 
+                                    src="assets/images/sport/volleyball-1x.png" 
+                                    alt="Volleyball icon" 
+                                    class="sports-list__icon-img"
+                                    loading="lazy">
+                            </picture>
+                            Volleyball
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar__section">
+                <h2 class="sidebar__title">CASINO</h2>
+                <div class="casino-games">
+                    <div class="casino-games__item">
+                        <picture class="casino-games__picture">
+                            <source 
+                                srcset="assets/images/casino/first-2x.png 2x, 
+                                        assets/images/casino/first-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/casino/first-1x.png" 
+                                alt="WELL OIL" 
+                                class="casino-games__image"
+                                loading="lazy">
+                        </picture>
+                        <div class="casino-games__overlay">
+                            <span class="casino-games__title">WELL OIL</span>
+                            <button class="casino-games_button--login">LOGIN</button>
+                            <span class="casino-games__or">or</span>
+                            <button class="casino-games_button--signup">SIGN UP</button>
+                        </div>
+                    </div>
+                    
+                    <div class="casino-games__item">
+                        <picture class="casino-games__picture">
+                            <source 
+                                srcset="assets/images/casino/second-2x.png 2x, 
+                                        assets/images/casino/second-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/casino/second-1x.png" 
+                                alt="QUEEN OF ICE EXPANDED EDITION" 
+                                class="casino-games__image"
+                                loading="lazy">
+                        </picture>
+                        <div class="casino-games__overlay">
+                            <span class="casino-games__title">WELL OIL</span>
+                            <button class="casino-games_button--login">LOGIN</button>
+                            <span class="casino-games__or">or</span>
+                            <button class="casino-games_button--signup">SIGN UP</button>
+                        </div>
+                    </div>
+                    
+                    <div class="casino-games__item">
+                        <picture class="casino-games__picture">
+                            <source 
+                                srcset="assets/images/casino/third-2x.png 2x, 
+                                        assets/images/casino/third-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/casino/third-1x.png" 
+                                alt="LUCKY JACK TUT'S TREASURES" 
+                                class="casino-games__image"
+                                loading="lazy">
+                        </picture>
+                        <div class="casino-games__overlay">
+                            <span class="casino-games__title">WELL OIL</span>
+                            <button class="casino-games_button--login">LOGIN</button>
+                            <span class="casino-games__or">or</span>
+                            <button class="casino-games_button--signup">SIGN UP</button>
+                        </div>
+                    </div>
+                    
+                    <div class="casino-games__item">
+                        <picture class="casino-games__picture">
+                            <source 
+                                srcset="assets/images/casino/fourth-2x.png 2x, 
+                                        assets/images/casino/fourth-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/casino/fourth-1x.png" 
+                                alt="HOT CASH HOLD 'N' LINK" 
+                                class="casino-games__image"
+                                loading="lazy">
+                        </picture>
+                        <div class="casino-games__overlay">
+                            <span class="casino-games__title">WELL OIL</span>
+                            <button class="casino-games_button--login">LOGIN</button>
+                            <span class="casino-games__or">or</span>
+                            <button class="casino-games_button--signup">SIGN UP</button>
+                        </div>
+                    </div>
+                    
+                    <div class="casino-games__item">
+                        <picture class="casino-games__picture">
+                            <source 
+                                srcset="assets/images/casino/fifth-2x.png 2x, 
+                                        assets/images/casino/fifth-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/casino/fifth-1x.png" 
+                                alt="LUCKY JACK LOST JUNGLE" 
+                                class="casino-games__image"
+                                loading="lazy">
+                        </picture>
+                        <div class="casino-games__overlay">
+                            <span class="casino-games__title">WELL OIL</span>
+                            <button class="casino-games_button--login">LOGIN</button>
+                            <span class="casino-games__or">or</span>
+                            <button class="casino-games_button--signup">SIGN UP</button>
+                        </div>
+                    </div>
+                    
+                    <div class="casino-games__item">
+                        <picture class="casino-games__picture">
+                            <source 
+                                srcset="assets/images/casino/sixth-2x.png 2x, 
+                                        assets/images/casino/sixth-1x.png 1x"
+                                type="image/png">
+                            <img 
+                                src="assets/images/casino/sixth-1x.png" 
+                                alt="ROYAL COINS HOLD AND WIN" 
+                                class="casino-games__image"
+                                loading="lazy">
+                        </picture>
+                        <div class="casino-games__overlay">
+                            <span class="casino-games__title">WELL OIL</span>
+                            <button class="casino-games_button--login">LOGIN</button>
+                            <span class="casino-games__or">or</span>
+                            <button class="casino-games_button--signup">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html> 
