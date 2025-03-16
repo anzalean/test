@@ -43,7 +43,8 @@ img {
 
 h2 {
 color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 48px;
 font-style: normal;
 font-weight: 700;
@@ -53,7 +54,8 @@ text-transform: uppercase;
 
 h3 {
 color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 40px;
 font-style: normal;
 font-weight: 700;
@@ -62,7 +64,8 @@ text-transform: uppercase;
 }
  p {
 color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -97,7 +100,8 @@ justify-content: center;
 align-items: center; 
 background: #141E55; 
 color: #FFF;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
@@ -119,7 +123,8 @@ background: #1A3769;
 color: #FCFCFC;
 
 /* New style/button */
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -168,7 +173,8 @@ justify-content: center;
     border-radius: 16px;
     padding: 8px 16px;
     color: #FCFCFC;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
+
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
@@ -205,11 +211,18 @@ justify-content: center;
     top: 60px;
     background-color: #192A32;
     border-radius: 16px;
-    display: none;
+    
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s;
 }
 
 .language-dropdown--visible {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .language-dropdown__list {
@@ -239,7 +252,8 @@ justify-content: center;
     background: transparent;
     border: none;
     text-align: left;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
+
     font-size: 14px;
     color: #192A32;
     cursor: pointer;
@@ -251,17 +265,21 @@ justify-content: center;
 }
 .language-dropdown__text {
     color: #FCFCFC;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
+
     font-size: 14px;
     font-weight: 600;
 }
+
 .language-dropdown__flag {
-    width: 24px;
-    height: 18px;
-    margin-right: 12px;
-    border-radius: 2px;
+transform: rotate(180deg);
+transition: transform 0.3s ease-in-out;
+stroke: rgba(255, 255, 255, 1);
 }
 
+.language-selector--active .language-dropdown__flag {
+    transform: rotate(0deg);
+}
 .header__buttons {
     display: flex;
     gap: 16px;
@@ -273,7 +291,8 @@ height: 48px;
 padding: 12px 32px;
 justify-content: center;
 align-items: center;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -328,7 +347,8 @@ margin: 20px 0;
 .hero__description {
     color: var(--Text-color, #192A32);
 /* New style/body */
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -346,7 +366,8 @@ background: #1A3769;
 color: #FFF;
 
 text-align: justify;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -389,7 +410,8 @@ text-transform: uppercase;
 .promo__rating {
 display: inline-flex;
 color: #FFF;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 24px;
 font-style: normal;
 font-weight: 600;
@@ -411,7 +433,8 @@ text-transform: uppercase;
     margin-top: 4px;
     margin-bottom: 10px;
     color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -423,7 +446,8 @@ opacity: 0.8;
 .promo__title {
     max-width: 538px;
     color: #FFF;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 40px;
 font-style: normal;
 font-weight: 700;
@@ -450,7 +474,8 @@ box-shadow: 0px 4px 18px 0px rgba(14, 24, 17, 0.25);
 
 color: #FCFCFC;
 
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -461,7 +486,8 @@ text-align: center;
 
 .promo__text {
     color: #FFF;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 6px;
 font-style: normal;
 font-weight: 400;
@@ -541,7 +567,8 @@ box-shadow: 0px 1px 12px 0px rgba(10, 98, 106, 0.15);
     color: #192A32;
 
 text-align: center;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 10px;
 font-style: normal;
 font-weight: 600;
@@ -575,7 +602,8 @@ line-height: normal;
 
 .bonus__title {
 color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 40px;
 font-style: normal;
 font-weight: 700;
@@ -585,7 +613,8 @@ text-transform: uppercase;
 
 .bonus__text {
 color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 32px;
 font-style: normal;
 font-weight: 700;
@@ -606,7 +635,8 @@ border: 1px solid #FFF;
 background: #EC622B;
 box-shadow: 0px 4px 18px 0px rgba(14, 24, 17, 0.25);
 color: #FCFCFC;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -636,7 +666,8 @@ text-transform: uppercase;
 }
 .ratings__label {
     color: #FFF;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -653,7 +684,8 @@ text-transform: uppercase;
 .ratings__score {
 color: #FFF;
 text-align: center;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -696,7 +728,8 @@ max-width: 850px;
     max-width: 167px;
     color: #192A32;
 
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
@@ -708,7 +741,8 @@ margin-right: 32px;
 
 .fact-item__value {
 color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -734,7 +768,8 @@ line-height: 150%; /* 24px */
 
 .sportsbook-review__item {
 color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -744,7 +779,8 @@ line-height: 150%; /* 24px */
 .sportsbook-review__decoration {
 color: #192A32;
 text-align: center;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -772,7 +808,8 @@ border: none;
 background: #EC622B;
 box-shadow: 0px 4px 18px 0px rgba(14, 24, 17, 0.25);
 color: var(--White, #FFF);
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -913,7 +950,8 @@ gap: 31px;
 
 .feedback-card__name {
     color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -968,7 +1006,8 @@ border: 1px solid #192A32;
 color: #192A32;
 
 /* New style/button */
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -999,7 +1038,8 @@ text-transform: uppercase;
     width: 212px;
     margin-right: 26px;
     color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -1009,7 +1049,8 @@ line-height: 150%; /* 24px */
 .support__contact-value {
     max-width: 480px;
     color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -1038,7 +1079,8 @@ justify-content: space-between;
 align-items: flex-start;
 
 color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -1068,7 +1110,8 @@ border-radius: 0px 0px 6px 6px;
 opacity: 0.9;
 background: #DFE8F6;
 color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -1097,7 +1140,8 @@ align-items: center;
 justify-content: center;
 
 color: #192A32;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 32px;
 font-style: normal;
 font-weight: 600;
@@ -1123,7 +1167,8 @@ justify-content: center;
 align-items: center;
 background: #141E55;
 color: #FFF;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 32px;
 font-style: normal;
 font-weight: 400;
@@ -1168,7 +1213,8 @@ border: none;
 color: #FCFCFC;
 
 text-align: justify;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -1186,7 +1232,8 @@ line-height: 150%; /* 24px */
     align-items: center;
     transform: rotate(90deg);
     text-align: justify;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -1196,7 +1243,8 @@ line-height: 150%;
 .live-events__icon--empty {
     transform: rotate(90deg);
     text-align: justify;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -1218,7 +1266,8 @@ line-height: 150%;
     padding: 8px 12px;
     color: #7C7C7C;
 text-align: justify;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -1241,7 +1290,8 @@ flex-shrink: 0;
 border-radius: 6px;
 background: #192A32;
 color: #FCFCFC;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -1297,7 +1347,8 @@ overflow: hidden;
 
 .casino-games__title {
     color: #FCFCFC;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -1313,7 +1364,8 @@ color: #2CB154;
 background: transparent;
 border: none;
 
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -1325,7 +1377,8 @@ padding: 0;
 
 .casino-games__or {
     color: #FCFCFC;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -1344,7 +1397,8 @@ border-radius: 16px;
 background: #EC622B;
 box-shadow: 0px 4px 18px 0px rgba(14, 24, 17, 0.25);
 color: #FCFCFC;
-font-family: Poppins;
+font-family: "Poppins", sans-serif;
+
 font-size: 12px;
 font-style: normal;
 font-weight: 600;
