@@ -1873,6 +1873,20 @@ h3 {
     width: 190px;
     
 }
+}
+
+@media screen and (max-width: 1439px) {
+    .mobile-menu__sidebar .layout__sidebar {
+        margin-top: 0;
+    }
+}
+
+/* Update mobile menu styles */
+.mobile-menu__language .language-selector {
+    width: 100%;
+    background: #1A3769;
+}
+
 
 .mobile-menu__nav {
     margin-bottom: 30px;
@@ -1972,16 +1986,4 @@ h3 {
 
 .mobile-menu__sidebar {
     padding-top: 20px;
-}
-
-@media screen and (max-width: 1439px) {
-    .mobile-menu__sidebar .layout__sidebar {
-        margin-top: 0;
-    }
-}
-
-/* Update mobile menu styles */
-.mobile-menu__language .language-selector {
-    width: 100%;
-    background: #1A3769;
 }
