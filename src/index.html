@@ -19,6 +19,11 @@
                 <header class="header">
                     <div class="header__container">
                         <a href="/" class="header__logo">LOGO</a>
+                        <button class="burger-menu" aria-label="Відкрити меню">
+                            <span class="burger-menu__line"></span>
+                            <span class="burger-menu__line"></span>
+                            <span class="burger-menu__line"></span>
+                        </button>
                         <nav class="header__nav">
                             <ul class="header__menu">
                                 <li class="header__menu-item">
@@ -50,48 +55,103 @@
                         </nav>
                         <div class="header__actions">
                             <div class="header__language">
-                                <button class="language-selector ">
+                                <button class="language-selector">
                                     <svg class="language-selector__flag" width="24" height="18">
                                         <use href="assets/sprites/sprite.svg#icon-austria"></use>
                                     </svg>
                                     <span class="language-selector__text">AT</span>
                                     <svg class="language-dropdown__flag" width="24" height="24">
-                                                <use href="assets/sprites/sprite.svg#icon-up"></use>
-                                            </svg>
+                                        <use href="assets/sprites/sprite.svg#icon-up"></use>
+                                    </svg>
                                 </button>
-                            </div>
-                            <div class="language-dropdown">
-                                <ul class="language-dropdown__list">
-                                    <li class="language-dropdown__item language-dropdown__item--active">
-                                        <button class="language-dropdown__button">
-                                            <svg class="language-dropdown__flag" width="24" height="18">
-                                                <use href="assets/sprites/sprite.svg#icon-austria"></use>
-                                            </svg>
-                                            <span class="language-dropdown__text">Austria (AT)</span>
-                                        </button>
-                                    </li>
-                                    <li class="language-dropdown__item">
-                                        <button class="language-dropdown__button">
-                                            <svg class="language-dropdown__flag" width="24" height="18">
-                                                <use href="assets/sprites/sprite.svg#icon-china"></use>
-                                            </svg>
-                                            <span class="language-dropdown__text">China (CN)</span>
-                                        </button>
-                                    </li>
-                                    <li class="language-dropdown__item">
-                                        <button class="language-dropdown__button">
-                                            <svg class="language-dropdown__flag" width="24" height="18">
-                                                <use href="assets/sprites/sprite.svg#icon-uk"></use>
-                                            </svg>
-                                            <span class="language-dropdown__text">UK (EN)</span>
-                                        </button>
-                                    </li>
-                                </ul>
+                                <div class="language-dropdown">
+                                    <ul class="language-dropdown__list">
+                                        <li class="language-dropdown__item language-dropdown__item--active">
+                                            <button class="language-dropdown__button">
+                                                <svg class="language-dropdown__flag" width="24" height="18">
+                                                    <use href="assets/sprites/sprite.svg#icon-austria"></use>
+                                                </svg>
+                                                <span class="language-dropdown__text">Austria (AT)</span>
+                                            </button>
+                                        </li>
+                                        <li class="language-dropdown__item">
+                                            <button class="language-dropdown__button">
+                                                <svg class="language-dropdown__flag" width="24" height="18">
+                                                    <use href="assets/sprites/sprite.svg#icon-china"></use>
+                                                </svg>
+                                                <span class="language-dropdown__text">China (CN)</span>
+                                            </button>
+                                        </li>
+                                        <li class="language-dropdown__item">
+                                            <button class="language-dropdown__button">
+                                                <svg class="language-dropdown__flag" width="24" height="18">
+                                                    <use href="assets/sprites/sprite.svg#icon-uk"></use>
+                                                </svg>
+                                                <span class="language-dropdown__text">UK (EN)</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="header__buttons">
                                 <button class="header__button button--orange">SIGN UP</button>
                                 <button class="header__button button--green">LOG IN</button>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Add mobile menu -->
+                    <div class="mobile-menu">
+                        <nav class="mobile-menu__nav">
+                            <ul class="mobile-menu__list">
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link mobile-menu__link--bonuses">
+                                        <svg class="mobile-menu__icon" width="24" height="24">
+                                            <use href="assets/sprites/sprite.svg#icon-gift"></use>
+                                        </svg>
+                                        BONUSES
+                                    </a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link mobile-menu__link--app">
+                                        <svg class="mobile-menu__icon" width="24" height="24">
+                                            <use href="assets/sprites/sprite.svg#icon-smartphone"></use>
+                                        </svg>
+                                        APP
+                                    </a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link">LIVE</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link">SPORTS</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link">MORE</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="mobile-menu__actions">
+                            <div class="mobile-menu__language">
+                                <button class="language-selector">
+                                    <svg class="language-selector__flag" width="24" height="18">
+                                        <use href="assets/sprites/sprite.svg#icon-austria"></use>
+                                    </svg>
+                                    <span class="language-selector__text">AT</span>
+                                    <svg class="language-dropdown__flag" width="24" height="24">
+                                        <use href="assets/sprites/sprite.svg#icon-up"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mobile-menu__buttons">
+                                <button class="mobile-menu__button button--orange">SIGN UP</button>
+                                <button class="mobile-menu__button button--green">LOG IN</button>
+                            </div>
+                        </div>
+
+                        <div class="mobile-menu__sidebar">
+                            <!-- Copy layout__sidebar content here -->
                         </div>
                     </div>
                 </header>

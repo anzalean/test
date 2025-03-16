@@ -1,4 +1,6 @@
-/* Reset styles */
+/* =============================================
+   Reset styles
+   ============================================= */
 *,
 *::before,
 *::after {
@@ -41,6 +43,9 @@ img {
   height: auto;
 }
 
+/* =============================================
+   Typography
+   ============================================= */
 h2 {
 color: #192A32;
 font-family: "Poppins", sans-serif;
@@ -71,6 +76,10 @@ font-style: normal;
 font-weight: 400;
 line-height: 150%; /* 24px */
  }
+
+/* =============================================
+   Header Section
+   ============================================= */
 .header {
  width: 100%;
  height: 80px; 
@@ -106,6 +115,13 @@ font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 128%; /* 25.6px */
+
+transition: background-color 0.3s ease;
+}
+
+.header__logo:hover,
+.header__logo:focus {
+    background: #1A3769;
 }
 
 .header__menu {
@@ -130,17 +146,29 @@ font-style: normal;
 font-weight: 600;
 line-height: 128%; /* 20.48px */
 text-transform: uppercase;
+transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.header__menu-item:hover,
+.header__menu-item:focus {
+    background-color: #234785;
+    transform: translateY(-2px);
+}
 
 .header__link {
     padding: 12px 24px;
     width: 100%;
     height: 100%;
-
     display: flex;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.header__link:hover,
+.header__link:focus {
+    background-color: #234785;
+    border-radius: 16px;
 }
 
 .header__icon {
@@ -160,6 +188,7 @@ justify-content: center;
 .header__language {
     position: relative;
     z-index: 100;
+    margin-left: auto;
 }
 
 .language-selector {
@@ -220,6 +249,7 @@ justify-content: center;
 }
 
 .language-dropdown--visible {
+    width: 160px;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -262,6 +292,7 @@ justify-content: center;
 
 .language-dropdown__button:hover {
     background-color: #F5F8FC;
+   
 }
 .language-dropdown__text {
     color: #FCFCFC;
@@ -269,6 +300,11 @@ justify-content: center;
 
     font-size: 14px;
     font-weight: 600;
+
+    margin-left: 8px;
+}
+.language-dropdown__button:hover .language-dropdown__text {
+ color: #192A32;
 }
 
 .language-dropdown__flag {
@@ -307,14 +343,26 @@ box-shadow: 0px 4px 18px 0px rgba(14, 24, 17, 0.25);
 
 .button--orange {
     background: #EC622B;
-    
-    
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button--orange:hover,
+.button--orange:focus {
+    background: #D55A27;
+    transform: translateY(-2px);
 }
 .button--green {
     background: #0FA810;
-    
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button--green:hover,
+.button--green:focus {
+    background: #0D910E;
+    transform: translateY(-2px);
 }
 
+/* =============================================
+   Main Layout
+   ============================================= */
 .layout__main {
 width: 100%;
 max-width: 1200px;
@@ -373,6 +421,13 @@ font-style: normal;
 font-weight: 600;
 line-height: 120%; /* 19.2px */
 text-transform: uppercase;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero__button:hover,
+.hero__button:focus {
+    background: #234785;
+    transform: translateY(-2px);
 }
 
 .hero__icons {
@@ -381,7 +436,9 @@ text-transform: uppercase;
     margin-right: 7px;
 }
 
-
+/* =============================================
+   Promo Section
+   ============================================= */
 .promo__container {
   background: url(../assets/images/promo-1x.jpg);
   background-repeat: no-repeat;
@@ -482,6 +539,13 @@ font-weight: 600;
 line-height: 128%; /* 20.48px */
 text-transform: uppercase;
 text-align: center;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.promo__button:hover,
+.promo__button:focus {
+    background: #D55A27;
+    transform: translateY(-2px);
 }
 
 .promo__text {
@@ -496,6 +560,10 @@ line-height: 150%; /* 9px */
 margin-left: 57.5px;
 margin-bottom: 52px;
 }
+
+/* =============================================
+   Navigation Section
+   ============================================= */
 .navigation__list {
     display: flex;
 
@@ -512,14 +580,14 @@ margin-bottom: 52px;
     padding-bottom: 7px;
     position: relative;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .navigation__item:hover {
     background-color: #EAEAEA;
 }
 
-/* Змінюємо псевдоелемент, щоб він був зверху */
+
 .navigation__item::before {
     content: '';
     position: absolute;
@@ -575,6 +643,9 @@ font-weight: 600;
 line-height: normal;
 }
 
+/* =============================================
+   Bonus Section
+   ============================================= */
 .bonus__container.container {
     padding: 90px 20px;
 }
@@ -642,13 +713,22 @@ font-style: normal;
 font-weight: 600;
 line-height: 128%; /* 20.48px */
 text-transform: uppercase;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bonus__button:hover,
+.bonus__button:focus {
+    background: #D55A27;
+    transform: translateY(-2px);
 }
 
 .bonus-info__title {
     margin-bottom: 16px;
 }
 
-
+/* =============================================
+   Ratings Section
+   ============================================= */
 .ratings__container {
     display: flex;
     flex-direction: column;
@@ -693,6 +773,9 @@ line-height: 150%; /* 21px */
 text-transform: uppercase;
 }
 
+/* =============================================
+   Facts Section
+   ============================================= */
 .facts__title {
 padding-bottom: 6px;
 border-bottom: 2px solid #C5C5C5;
@@ -712,6 +795,11 @@ display: flex;
 align-items: center;
 border-bottom: 1px solid rgba(119, 119, 119, 0.50);
 max-width: 850px;
+transition: background-color 0.3s ease;
+}
+
+.fact-item:hover {
+    background-color: #F6F6F6;
 }
 
 .fact-item__icon {
@@ -749,6 +837,9 @@ font-weight: 400;
 line-height: 150%; /* 24px */
 }
 
+/* =============================================
+   Sportsbook Review Section
+   ============================================= */
 .sportsbook-review__container {
     display: flex;
     flex-direction: column;
@@ -815,25 +906,18 @@ font-style: normal;
 font-weight: 600;
 line-height: 128%; /* 20.48px */
 text-transform: uppercase;
+transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.sportsbook-review__button:hover,
+.sportsbook-review__button:focus {
+    background: #D55A27;
+    transform: translateY(-2px);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Стилі для секції відгуків */
+/* =============================================
+   Reviews Section
+   ============================================= */
 .reviews-section {
     padding: 60px 0;
     background-color: #F6F6F6;
@@ -855,6 +939,12 @@ text-transform: uppercase;
     padding: 24px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
     height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .review-card__header {
@@ -876,7 +966,6 @@ text-transform: uppercase;
     line-height: 1.5;
 }
 
-/* Стилі для кнопок навігації */
 .swiper-button-next,
 .swiper-button-prev {
     color: #192A32;
@@ -885,12 +974,20 @@ text-transform: uppercase;
     height: 40px;
     border-radius: 50%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
-    font-size: 18px;
+.swiper-button-next:hover,
+.swiper-button-next:focus,
+.swiper-button-prev:hover,
+.swiper-button-prev:focus {
+    background-color: #C5D5E8;
+    transform: scale(1.1);
 }
+
+/* =============================================
+   Players Feedback Section
+   ============================================= */
 .players-feedback__container.container {
     padding: 20px;
 }
@@ -965,6 +1062,9 @@ text-transform: uppercase;
     align-items: center;
 }
 
+/* =============================================
+   Support Section
+   ============================================= */
 .support__container {
   background: url(../assets/images/support-1x.jpg);
   background-repeat: no-repeat;
@@ -1013,6 +1113,13 @@ font-style: normal;
 font-weight: 600;
 line-height: 128%; /* 20.48px */
 text-transform: uppercase;
+transition: all 0.3s ease;
+}
+
+.support__button:hover,
+.support__button:focus {
+    background-color: #E2EAF7;
+    transform: translateY(-2px);
 }
 
 .support__contacts {
@@ -1060,13 +1167,28 @@ line-height: 150%; /* 24px */
 .support__contact-value--email {
     color: var(--22bet_5, #2E9344);
     text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.support__contact-value--email:hover,
+.support__contact-value--email:focus {
+    color: #1E6B2E;
 }
 
 .support__contact-value--link {
     font-weight: 600;
      color: var(--22bet_5, #2E9344);
+    transition: color 0.3s ease;
 }
 
+.support__contact-value--link:hover,
+.support__contact-value--link:focus {
+    color: #1E6B2E;
+}
+
+/* =============================================
+   FAQ Section
+   ============================================= */
 .faq__title {
     margin-bottom: 32px;
 }
@@ -1074,18 +1196,22 @@ line-height: 150%; /* 24px */
 .faq__question.ac-header.ac-trigger {
     border: 1px solid rgba(119, 119, 119, 0.50);
     display: flex;
-padding: 20px;
-justify-content: space-between;
-align-items: flex-start;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #192A32;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
 
-color: #192A32;
-font-family: "Poppins", sans-serif;
-
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 150%; /* 24px */
-text-transform: uppercase;
+.faq__question.ac-header.ac-trigger:hover,
+.faq__question.ac-header.ac-trigger:focus {
+    background-color: #F5F8FC;
 }
 
 .faq__icon{
@@ -1119,6 +1245,9 @@ line-height: 150%; /* 24px */
 transition: 0.3s ease-in-out;
 }
 
+/* =============================================
+   Footer Section
+   ============================================= */
 .footer__container.container{
     padding: 36px 20px 36px 22px;
 }
@@ -1173,14 +1302,23 @@ font-size: 32px;
 font-style: normal;
 font-weight: 400;
 line-height: 128%; /* 40.96px */
+transition: background-color 0.3s ease;
 }
+
+.footer__logo:hover,
+.footer__logo:focus {
+    background: #1A3769;
+}
+
 .footer__logo--right {
 width: 253px;
 height: 54px;
 padding: 6px 81px 7px 82px;
 }
 
-
+/* =============================================
+   Sidebar Section
+   ============================================= */
 .layout__sidebar {
     width: 100%;
     max-width: 295px;
@@ -1219,6 +1357,13 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 150%; /* 24px */
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.live-events__button:hover,
+.live-events__button:focus {
+    background: #D55A27;
+    transform: translateY(-2px);
 }
 
 .live-events__icon {
@@ -1372,7 +1517,12 @@ font-weight: 600;
 line-height: 150%;
 
 padding: 0;
+transition: color 0.3s ease;
+}
 
+.casino-games_button--login:hover,
+.casino-games_button--login:focus {
+    color: #239544;
 }
 
 .casino-games__or {
@@ -1406,4 +1556,381 @@ line-height: 128%; /* 15.36px */
 text-transform: uppercase;
 border: none;
 text-wrap: nowrap;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.casino-games_button--signup:hover,
+.casino-games_button--signup:focus {
+    background: #D55A27;
+    transform: translateY(-2px);
+}
+
+/* =============================================
+   Media Queries
+   ============================================= */
+
+/* Burger Menu Styles */
+.burger-menu {
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-menu__line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #FCFCFC;
+    margin: 4px 0;
+    transition: 0.3s ease;
+}
+
+.burger-menu.is-active .burger-menu__line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.is-active .burger-menu__line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.is-active .burger-menu__line:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: #192A32;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+/* Tablet (768px - 1439px) */
+@media screen and (max-width: 1439px) {
+    h3 {
+        font-size: 36px;
+    }
+    .container, .header__container {
+        max-width: 720px;
+    }
+    div.header__container {
+        padding: 0;
+    }
+    .layout__content {
+            margin: 0 auto;
+    }
+
+    .header__container {
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__actions {
+        display: none;
+    }
+
+    .header__language {
+        margin-left: 0;
+    }
+
+    .burger-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .layout__main {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .layout__sidebar {
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .navigation__list {
+        flex-wrap: wrap;
+    }
+
+    .navigation__item {
+        flex: 1 1 calc(100% / 3);
+        max-width: calc(100% / 3);
+    }
+
+    .ratings__container {
+        flex-direction: column;
+    }
+
+    .feedback-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .players-feedback__slider {
+        margin-bottom: 45px;
+    }
+    .players-feedback__nav.players-feedback__nav--next.swiper-button-next {
+        top: auto;
+        bottom: 16px;
+        right: 45%;
+        transform: translateX(45%);
+    }
+    .players-feedback__nav.players-feedback__nav--prev.swiper-button-prev {
+        top: auto;
+        bottom: 16px;
+        right: 55%;
+        transform: translateX(55%);
+    }
+    .support__buttons {
+        flex-wrap: wrap;
+    }
+    .support__contact-value {
+        max-width: 400px;
+    }
+
+    .footer__content {
+    
+        align-items: center;
+    
+    }
+
+    .mobile-menu__actions, .mobile-menu__sidebar, .mobile-menu__nav {
+        max-width: 720px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .footer__text {
+    max-width: 576px;
+}
+}
+
+
+
+/* Mobile (375px - 767px) */
+@media screen and (max-width: 767px) {
+    .header {
+        height: 60px;
+    }
+
+    .header__logo {
+        width: 100px;
+        height: 45px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .mobile-menu {
+        top: 60px;
+        height: calc(100vh - 60px);
+    }
+
+    .navigation__item {
+        flex: 1 1 calc(100% / 3);
+        max-width: calc(100% / 3);
+    }
+
+    .hero__content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .promo__title {
+        font-size: 32px;
+    }
+
+    .bonus__title {
+        font-size: 28px;
+    }
+
+    .fact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .fact-item__label {
+        margin-right: 0;
+    }
+
+    .support__button {
+        width: 100%;
+    }
+
+    .faq__question {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .footer__logos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* Small Mobile (320px - 374px) */
+@media screen and (max-width: 374px) {
+    .header__logo {
+        width: 80px;
+        font-size: 14px;
+    }
+
+    .navigation__item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .promo__title {
+        font-size: 24px;
+    }
+
+    .bonus__title {
+        font-size: 24px;
+    }
+
+    .bonus__text {
+        font-size: 20px;
+    }
+
+    .support__contact-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .support__contact-label {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.mobile-menu__nav {
+    margin-bottom: 30px;
+}
+
+.mobile-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mobile-menu__item {
+    width: 100%;
+}
+
+.mobile-menu__link {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #FCFCFC;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    border-radius: 16px;
+    border: 1px solid #FCFCFC;
+}
+
+.mobile-menu__link:hover,
+.mobile-menu__link:focus {
+    background-color: #1A3769;
+}
+
+.mobile-menu__icon {
+    width: 24px;
+    height: 24px;
+    fill: #FCFCFC;
+    margin-right: 10px;
+}
+
+.mobile-menu__actions {
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu__language {
+    margin-bottom: 20px;
+}
+
+.mobile-menu__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobile-menu__button {
+    display: inline-flex;
+    height: 48px;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 128%;
+    text-transform: uppercase;
+    border-radius: 16px;
+    border: none;
+    color: #FCFCFC;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mobile-menu__button.button--orange {
+    background: #EC622B;
+}
+
+.mobile-menu__button.button--orange:hover,
+.mobile-menu__button.button--orange:focus {
+    background: #D55A27;
+    transform: translateY(-2px);
+}
+
+.mobile-menu__button.button--green {
+    background: #0FA810;
+}
+
+.mobile-menu__button.button--green:hover,
+.mobile-menu__button.button--green:focus {
+    background: #0D910E;
+    transform: translateY(-2px);
+}
+
+.mobile-menu__sidebar {
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 1439px) {
+    .mobile-menu__sidebar .layout__sidebar {
+        margin-top: 0;
+    }
+}
+
+/* Update mobile menu styles */
+.mobile-menu__language .language-selector {
+    width: 100%;
+    background: #1A3769;
+}
 }
