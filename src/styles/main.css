@@ -1678,6 +1678,7 @@ transition: background-color 0.3s ease, transform 0.2s ease;
     .navigation__item {
         flex: 1 1 calc(100% / 3);
         max-width: calc(100% / 3);
+        border-bottom: 2px solid rgba(16, 76, 84, 0.20);
     }
 
     .ratings__container {
@@ -1769,6 +1770,7 @@ h3 {
     .navigation__item {
         flex: 1 1 calc(100% / 3);
         max-width: calc(100% / 3);
+        
     }
 
     .hero__content {
@@ -1838,6 +1840,12 @@ h3 {
 
 /* Small Mobile (320px - 374px) */
 @media screen and (max-width: 374px) {
+        .container {
+        max-width: calc(100vw - 20px);
+    }
+    .header__container {
+        max-width: calc(100vw - 20px);
+    }
     .header__logo {
         width: 80px;
         font-size: 14px;
@@ -1860,15 +1868,10 @@ h3 {
         font-size: 20px;
     }
 
-    .support__contact-item {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .support__contact-label {
-        width: 100%;
-        margin-right: 0;
-    }
+   
+.support__contact-label {
+    width: 190px;
+    
 }
 
 .mobile-menu__nav {
